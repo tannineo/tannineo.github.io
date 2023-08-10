@@ -1,0 +1,33 @@
+{
+  "name": "tannineo-github-io",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev --host 0.0.0.0 --port 8888",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^0.19.7",
+    "@astrojs/solid-js": "^2.2.0",
+    "@nanostores/persistent": "^0.9.1",
+    "@nanostores/solid": "^0.4.2",
+    "astro": "^2.10.4",
+    "clsx": "^2.0.0",
+    "date-fns": "^2.30.0",
+    "howler": "^2.2.3",
+    "lodash": "^4.17.21",
+    "nanostores": "^0.9.3",
+    "solid-js": "^1.7.10"
+  },
+  "devDependencies": {
+    "@iconify-json/mdi": "^1.1.54",
+    "@types/lodash": "^4.14.197",
+    "@unocss/preset-icons": "^0.55.0",
+    "@unocss/reset": "^0.55.0",
+    "prettier": "^3.0.1",
+    "prettier-plugin-astro": "^0.11.0",
+    "unocss": "^0.55.0"
+  }
+}
