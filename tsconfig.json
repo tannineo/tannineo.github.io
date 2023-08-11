@@ -2,6 +2,7 @@
   "extends": "astro/tsconfigs/base",
   "compilerOptions": {
     "jsx": "preserve",
+    // "jsxImportSource": "react", // use different jsxImportSource at the begining of the source files
     "allowImportingTsExtensions": true
   }
 }
