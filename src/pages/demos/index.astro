@@ -1,22 +1,23 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import Link from '../../components/Link.astro'
+import DemoGroup from '../../components/DemoGroup.astro'
 ---
 
 <BaseLayout>
-  <ul>
-    <li class='flex flex-row items-baseline justify-center'>
-      <Link href='/demos/add2calendar'>Add2Calendar</Link> - a link/.ics generator
-    </li>
+  <ul class='w-full' u-flex='~ col'>
+    <DemoGroup link='/demos/add2calendar' name='Add2Calendar' description='a link/.ics generator' />
 
-    <li class='flex flex-row items-baseline justify-center'>
-      <Link href='https://tannineo.github.io/solid-metronome'>Solid Metronome</Link> - a metronome
-      app in Solid.js
-    </li>
+    <DemoGroup
+      link='https://tannineo.github.io/solid-metronome'
+      name='Solid Metronome'
+      description='a metronome app in Solid.js with Astro'
+    />
 
-    <li class='flex flex-row items-baseline justify-center'>
-      <Link href='https://tannineo.github.io/simple_lip_sync_js/'>LipSyncRoboot</Link> - a simple
-      'lip sync' tool based on volume
-    </li>
+    <DemoGroup
+      link='https://tannineo.github.io/simple_lip_sync_js'
+      name='LipSyncRoboot'
+      description="a simple 'lip sync' tool based on volume"
+    />
   </ul>
 </BaseLayout>

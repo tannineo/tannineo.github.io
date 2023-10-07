@@ -2,8 +2,13 @@
 import Link from './Link.astro'
 ---
 
-<header class='w-full' u-flex='~ row items-baseline justify-center'>
-  <span id='site-name' class='flex-none text-3xl p-4'>Tannineo's Test Field</span>
+<header
+  class='w-full fixed top-0 bg-sumi shadow-lg shadow-seiji'
+  u-flex='~ row items-baseline justify-center'
+>
+  <a id='site-name' class='flex-none text-3xl p-4 hover:text-white hover:underline' href='/'
+    >Tannineo's Test Field</a
+  >
   <nav class='flex-1 flex flex-row items-center justify-end p-4'>
     <Link href='/demos'>Demos</Link>
     <Link href='https://github.com/tannineo'>Me</Link>
