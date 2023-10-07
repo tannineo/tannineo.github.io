@@ -14,6 +14,7 @@
     "@nanostores/persistent": "^0.9.1",
     "@nanostores/solid": "^0.4.2",
     "astro": "^3.2.3",
+    "cash-dom": "^8.1.5",
     "clsx": "^2.0.0",
     "date-fns": "^2.30.0",
     "howler": "^2.2.4",

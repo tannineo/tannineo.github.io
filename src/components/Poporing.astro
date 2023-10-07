@@ -1,0 +1,41 @@
+---
+
+---
+
+<button
+  id='poporing'
+  class='opacity-0 fixed bottom-4 -right-10 transition-all ease-in-out duration-500'
+>
+  <img class='w-16' src='/images/poporing.gif' />
+</button>
+
+<script>
+  import $ from 'cash-dom'
+
+  $(() => {
+    const poporing = $('#poporing')
+
+    poporing.on('click', () => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+      })
+    })
+  })
+
+  $(() => {
+    window.addEventListener('scroll', () => {
+      const scroll = window.scrollY
+      const poporing = $('#poporing')
+
+      if (scroll > 100) {
+        poporing.removeClass('-right-10 opacity-0')
+        poporing.addClass('right-4 opacity-100')
+      } else {
+        poporing.addClass('-right-10 opacity-0')
+        poporing.removeClass('right-4 opacity-100')
+      }
+    })
+  })
+</script>

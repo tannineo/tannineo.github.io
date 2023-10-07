@@ -20,6 +20,9 @@ dependencies:
   astro:
     specifier: ^3.2.3
     version: 3.2.3
+  cash-dom:
+    specifier: ^8.1.5
+    version: 8.1.5
   clsx:
     specifier: ^2.0.0
     version: 2.0.0
@@ -1595,6 +1598,10 @@ packages:
 
   /caniuse-lite@1.0.30001546:
     resolution: {integrity: sha512-zvtSJwuQFpewSyRrI3AsftF6rM0X80mZkChIt1spBGEvRglCrjTniXvinc8JKRoqTwXAgvqTImaN9igfSMtUBw==}
+    dev: false
+
+  /cash-dom@8.1.5:
+    resolution: {integrity: sha512-/BS05CfzyHR5xT2ksKj1sDLPaOv5rSmIwoGxNgdKwUtnIuiJ5neMxVEmZxvfyJiSjGbOMD0Lwe+9v+fszDqHew==}
     dev: false
 
   /ccount@2.0.1:
