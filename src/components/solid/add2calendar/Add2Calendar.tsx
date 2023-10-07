@@ -45,7 +45,7 @@ const Add2Calendar = () => {
   const [icsData] = createResource(() => ({ ...inputEventStore }), genICS)
 
   return (
-    <div class='w-full flex flex-col'>
+    <div class='w-full flex flex-col p-4'>
       <LabelGroup label='Event Title'>
         <InputField
           value={inputEventStore.title}
@@ -79,18 +79,18 @@ const Add2Calendar = () => {
 
       <LabelGroup label='Generated Links'>
         <div class='w-full flex flex-col p-1 items-start'>
-          <a class='hover:underline hover:text-white' href={getGoogleCalendarLink(inputEventStore)}>
+          <a class='underline hover:text-white' href={getGoogleCalendarLink(inputEventStore)}>
             Add to Google Calendar
           </a>
 
           <a
-            class='hover:underline hover:text-white'
+            class='underline hover:text-white'
             href={getOutlookCalendarLink(inputEventStore)}
           >
             Add to Outlook Calendar
           </a>
 
-          <a class='hover:underline hover:text-white' href={getYahooCalendarLink(inputEventStore)}>
+          <a class='underline hover:text-white' href={getYahooCalendarLink(inputEventStore)}>
             Add to Yahoo! Calendar
           </a>
         </div>
@@ -115,7 +115,7 @@ const Add2Calendar = () => {
         <Show when={icsData()} fallback={<p>generating...</p>}>
           <div class='w-full flex flex-col p-1 items-start'>
             <a
-              class='hover:underline hover:text-white my-1'
+              class='underline hover:text-white my-1'
               href={'data:text/plain;charset=utf-8,' + encodeURIComponent(icsData())}
               download='exported.ics'
             >
