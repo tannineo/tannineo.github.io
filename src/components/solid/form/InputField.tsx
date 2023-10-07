@@ -1,7 +1,5 @@
 /** @jsxImportSource solid-js */
 
-import 'solid-js'
-
 const InputField = (props: {
   value?: string
   onChange?: (val: string) => any

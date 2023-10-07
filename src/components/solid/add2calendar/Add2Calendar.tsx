@@ -1,7 +1,6 @@
 /** @jsxImportSource solid-js */
 // required for solid-js components
 
-import 'solid-js'
 import { Show, createResource } from 'solid-js'
 import { createStore } from 'solid-js/store'
 
@@ -10,8 +9,8 @@ import {
   getGoogleCalendarLink,
   getOutlookCalendarLink,
   getYahooCalendarLink,
-} from '../../utils/genCalendarEvent'
-import { getIANATimezoneByCode } from '../../consts/timezones'
+} from '../../../utils/genCalendarEvent'
+import { getIANATimezoneByCode } from '../../../consts/timezones'
 import InputField from '../form/InputField'
 import LabelGroup from '../form/LabelGroup'
 

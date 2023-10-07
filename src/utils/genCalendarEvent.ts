@@ -1,8 +1,7 @@
 import { format } from 'date-fns'
 import { createEvent } from 'ics'
 
-import { IANATimezone } from '../consts/timezones'
-import { reject } from 'lodash'
+import type { IANATimezone } from '../consts/timezones'
 
 export interface IEventInput {
   title: string // title: title of the event

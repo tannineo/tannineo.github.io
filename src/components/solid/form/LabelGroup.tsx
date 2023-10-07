@@ -1,7 +1,6 @@
 /** @jsxImportSource solid-js */
-import 'solid-js'
 import { children } from 'solid-js'
-import { JSX } from 'solid-js/jsx-runtime'
+import type { JSX } from 'solid-js/jsx-runtime'
 
 const LabelGroup = (props: { label: string; children: JSX.Element }) => {
   const ch = children(() => props.children)

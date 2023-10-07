@@ -1,12 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro'
-import A2CComponent from '../../components/add2calendar/Add2Calendar.tsx'
+import A2CComponent from '../../components/solid/add2calendar/Add2Calendar.tsx'
 ---
 
 <BaseLayout title='Add2Calendar'>
   <div class='w-full flex flex-col min-h-screen'>
     <h1 class='w-full text-center text-3xl my-8'>Add2Calendar - a link/.ics generator</h1>
 
-    <A2CComponent client:only />
+    <A2CComponent client:load />
   </div>
 </BaseLayout>
