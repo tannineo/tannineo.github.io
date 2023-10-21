@@ -5,15 +5,31 @@ interface Props {
   link: string
   name: string
   description: string
+  bilibili?: string
 }
 
-const { link, name, description } = Astro.props
+const { link, name, description, bilibili } = Astro.props
 ---
 
 <li class='m-2' u-flex='~ col lg:row items-baseline justify-center'>
   <div class='flex-none text-nowrap'><Link href={link}>{name}</Link></div>
 
-  <div class='flex-1 w-full' u-flex='~ row items-baseline'>
-    <div class='w-full m-1 ml-8 lg:ml-1 text-right'>-- {description}</div>
+  <div class='flex-1 w-full' u-flex='~ col'>
+    <div class='flex-1 w-full' u-flex='~ row items-baseline'>
+      <div class='w-full m-1 ml-8 lg:ml-1 text-right'>-- {description}</div>
+    </div>
+
+    {
+      bilibili && (
+        <div class='flex-1 w-full' u-flex='~ row items-baseline'>
+          <a
+            class='w-full m-1 ml-8 lg:ml-1 text-right hover:text-white underline'
+            href={'https://www.bilibili.com/video/' + bilibili}
+          >
+            bilibili: {bilibili}
+          </a>
+        </div>
+      )
+    }
   </div>
 </li>
