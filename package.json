@@ -9,28 +9,28 @@
     "astro": "ASTRO_TELEMETRY_DISABLED=1 astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^1.1.5",
-    "@astrojs/solid-js": "^3.0.3",
-    "@nanostores/persistent": "^0.9.1",
-    "@nanostores/solid": "^0.4.2",
-    "astro": "^3.6.5",
+    "@astrojs/mdx": "^4.2.6",
+    "@astrojs/solid-js": "^5.0.10",
+    "@nanostores/persistent": "^1.0.0",
+    "@nanostores/solid": "^1.0.0",
+    "astro": "^5.7.13",
     "cash-dom": "^8.1.5",
     "clsx": "^2.1.1",
-    "date-fns": "^2.30.0",
+    "date-fns": "^4.1.0",
     "howler": "^2.2.4",
-    "ics": "^3.7.2",
+    "ics": "^3.8.1",
     "lodash": "^4.17.21",
-    "nanostores": "^0.9.5",
-    "solid-js": "^1.8.17"
+    "nanostores": "^1.0.1",
+    "solid-js": "^1.9.7"
   },
   "devDependencies": {
-    "@iconify-json/mdi": "^1.1.66",
-    "@types/lodash": "^4.17.5",
-    "@unocss/preset-icons": "^0.56.5",
-    "@unocss/reset": "^0.56.5",
-    "prettier": "^3.3.1",
-    "prettier-plugin-astro": "^0.12.3",
-    "unocss": "^0.56.5"
+    "@iconify-json/mdi": "^1.2.3",
+    "@types/lodash": "^4.17.17",
+    "@unocss/preset-icons": "^66.1.2",
+    "@unocss/reset": "^66.1.2",
+    "prettier": "^3.5.3",
+    "prettier-plugin-astro": "^0.14.1",
+    "unocss": "^66.1.2"
   },
-  "packageManager": "pnpm@9.2.0+sha512.98a80fd11c2e7096747762304106432b3ddc67dcf54b5a8c01c93f68a2cd5e05e6821849522a06fb76284d41a2660d5e334f2ee3bbf29183bf2e739b1dafa771"
+  "packageManager": "pnpm@10.11.0+sha512.6540583f41cc5f628eb3d9773ecee802f4f9ef9923cc45b69890fb47991d4b092964694ec3a4f738a420c918a333062c8b925d312f42e4f0c263eb603551f977"
 }
